@@ -2,7 +2,7 @@ const http = require('k6/http');
 const {check} = require('k6');
 const UrlProvider = require('../requestManager/url.provider.js');
 export const options = {
-  vus: 10,
+  vus: 100,
   duration: '30s',
   thresholds: {
     http_req_failed: ['rate<0.01'], // http errors should be less than 1%

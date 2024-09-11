@@ -13,7 +13,7 @@ Feature: Get operations on Pets
     And User expects the status code is equals to "404"
 
   @Pets
-  Scenario: Get error for not finding id
+  Scenario: Get error for not valid id
 
     Given User performs GET request to "pet/asd"
     And User expects the status code is equals to "400"
