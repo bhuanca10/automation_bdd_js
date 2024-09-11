@@ -1,0 +1,22 @@
+{
+  "name": "automation_bdd_js",
+  "version": "1.0.0",
+  "description": "Contains basic structure for an automation framework using bdd approach",
+  "main": "index.js",
+  "scripts": {
+    "petsTests": "cucumber-js ./api-tests/pet/**/*.feature --tags @Pets",
+    "performanceTests": "k6 run performance-tests/get-requests.js"
+  },
+  "author": "benji19@hotmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.0.0",
+    "@cucumber/pretty-formatter": "^1.0.1",
+    "chai": "^4.4.1",
+    "chai-json-schema": "~1.5.1"
+  }
+}
